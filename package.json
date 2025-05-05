@@ -1,10 +1,13 @@
 {
+  "homepage": "https://Iliaunlem.github.io/word-chain-game",
   "name": "word-chain-game",
   "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -17,6 +20,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",
+    "gh-pages": "^6.3.0",
     "postcss": "^8.4.24",
     "tailwindcss": "^3.4.1",
     "vite": "^5.2.0"
